@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display+SC:ital@0;1&family=Sacramento&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__mobile {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__mobile .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__mobile .logo img {
+  width: 50px;
+  margin: 0 9px;
+}
+
+.header__mobile .logo p {
+  font-size: 11.7px;
+  color: #000;
+  letter-spacing: .5em;
+  font-family: "Playfair Display SC", serif;
+}
+
+.header__mobile i {
+  margin-right: 1.5rem;
+}
+
+.header__hero {
+  width: 100%;
+  height: 95vh;
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/4687/t/7/assets/img_homepage_slider1.jpg?v=839847293968337857);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__hero h1 {
+  text-align: center;
+  color: #fff;
+  padding: 0 36px 27.8px 36px;
+  font-size: 36px;
+  border-bottom: 1px solid white;
+  font-family: "Playfair Display SC", serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.header__hero p {
+  text-align: center;
+  color: #fff;
+  font-size: 54px;
+  font-family: "Sacramento", cursive;
+}
+/*# sourceMappingURL=styles.css.map */

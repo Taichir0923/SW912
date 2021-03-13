@@ -1,0 +1,34 @@
+@mixin titleSection($color, $padding, $titleSize, $textSize, $border, $font__style, $fontFamily) {
+    h1 {
+        text-align: center;
+        color: $color;
+        padding: $padding;
+        font-size: $titleSize;
+        border-bottom: $border;
+        font-family: $playfair;
+        font-style: $font__style;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        line-height: 1;
+    }
+    p {
+        text-align: center;
+        color: $color;
+        font-size: $textSize;
+        font-family: $fontFamily;
+    }
+}
+
+@mixin flexItems($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin shopName($color) {
+    font-size: 11.7px;
+    color: $color;
+    letter-spacing: .5em;
+    font-family: $playfair;
+}
