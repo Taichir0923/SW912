@@ -17,6 +17,56 @@
         i {
             margin-right: 1.5rem;
         }
+
+        @media(min-width: 1024px){
+            display: none;
+        }
+    }
+
+    &__desktop {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+        .nav {
+            @include flexItems(row, center);
+            ul {
+                @include flexItems(row, center);
+                color: $mainWhite;
+                li {
+                    list-style: none;
+                    padding: 0 2em 0.75em 2em;
+                    letter-spacing: .1em;
+                    border-bottom: $menuBorder;
+                    font-family: $alice;
+                    transition: .3s;
+                    &:hover {
+                        color: $hoverGreen;
+                        cursor: pointer;
+                    }
+                }
+
+                .logo {
+                    @include flexItems(column, center);
+                    padding: 1rem 2.5rem;
+                    p {
+                        @include shopName($mainWhite);
+                        transition: .3s;
+                        margin-top: .5rem;
+                        font-size: 10.5px;
+                        &:hover {
+                            color: $hoverGreen;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        @media(min-width: 1024px){
+            display: block;
+        }
     }
 
     &__hero {
@@ -28,5 +78,28 @@
         background-size: cover;
         @include flexItems(column, center);
         @include titleSection($mainWhite, $largeTitle_p_sm, $largeTitleSize_sm, $largeTextSize_sm, $whiteBorder, italic, $sacramento);
+        h1{
+            @media(min-width: 640px){
+                font-size: $largeTitleSize_lg;
+            }
+
+            @media(min-width: 1024px){
+                padding: $largeTitle_p_lg;
+            }
+        }
+        p {
+            transition: .3s;
+            &:hover {
+                color: $hoverGreen;
+                cursor: pointer;
+            }
+            @media(min-width: 640px){
+                font-size: $largeTextSize_lg !important;
+            }
+        }
+
+        @media(min-width: 1024px){
+            height: 100vh;
+        }
     }
 }

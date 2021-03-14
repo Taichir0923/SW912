@@ -1,0 +1,116 @@
+.products {
+    &__category {
+        width: 100%;
+        &__title {
+            margin-top: 1rem !important;
+            width: 90%;
+            margin: auto;
+            @include flexItems(column, center);
+            @include titleSection($textColor, $title_p_sm, $italicSize_sm, $textSize_sm, $blackBorder, italic, $alice);
+            h1 {
+                margin-bottom: 11.9px;
+            }
+
+            p#prod {
+                line-height: 1.5;
+            }
+
+            #logo {
+                @include shopName($logoColor)
+            }
+
+            @media(min-width:768px){
+                margin-top: 5rem !important;
+                h1 {
+                    font-size: $titleSize_md;
+                    padding: $title_p_md;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        &__items {
+            .product {
+                width: 85%;
+                margin: auto;
+                @include flexItems(column, center);
+                img {
+                    width: 100%;
+                    margin-top: .5rem;
+                }
+                @include titleSection($textColor, $title_p_sm, $italicSize_sm, $italicSize_sm, $lightBorder, normal, $sacramento);
+                h1 {
+                    width: 100%;
+                    margin-bottom: 14.85px;
+                    span {
+                        font-size: 21.6px;
+                    }
+                }
+
+                p {
+                    margin-bottom: 3rem;
+                }
+
+                .pr__md {
+                    display: none;
+                }
+            }
+
+            @media(min-width: 768px){
+                @include flexItems(row, center);
+                .product {
+                    width: 25%;
+                    position: relative;
+                    img {
+                        width: 70%;
+                    }
+                    #pr {
+                        display: none;
+                    }
+
+                    .pr__md {
+                        @include flexItems(column, center);
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        @include titleSection($mainWhite, $title_p_sm, $italicSize_sm, $italicSize_sm, $whiteBorder, normal, $sacramento);
+                        height: 300px;
+                        background-color: $hoverBG;
+                        width: 300px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        opacity: 0;
+                        transition: .3s;
+                        h1 {
+                            width: 80%;
+                        }
+
+                        p {
+                            transform: translateY(40px);
+                            transition: .3s;
+                            &:hover {
+                                color: $hoverGreen;
+                            }
+                        }
+
+                        &:hover {
+                            opacity: 1;
+                        }
+
+                        &:hover p {
+                            transform: translateY(0);
+                        }
+                    }
+                }
+            }
+
+            @media(min-width: 1024px){
+                .product {
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

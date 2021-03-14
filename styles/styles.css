@@ -57,6 +57,111 @@
   margin-right: 1.5rem;
 }
 
+@media (min-width: 1024px) {
+  .header__mobile {
+    display: none;
+  }
+}
+
+.header__desktop {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.header__desktop .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__desktop .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.header__desktop .nav ul li {
+  list-style: none;
+  padding: 0 2em 0.75em 2em;
+  letter-spacing: .1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: "Alice", serif;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header__desktop .nav ul li:hover {
+  color: #c7d93b;
+  cursor: pointer;
+}
+
+.header__desktop .nav ul .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2.5rem;
+}
+
+.header__desktop .nav ul .logo p {
+  font-size: 11.7px;
+  color: #fff;
+  letter-spacing: .5em;
+  font-family: "Playfair Display SC", serif;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-top: .5rem;
+  font-size: 10.5px;
+}
+
+.header__desktop .nav ul .logo p:hover {
+  color: #c7d93b;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .header__desktop {
+    display: block;
+  }
+}
+
 .header__hero {
   width: 100%;
   height: 95vh;
@@ -97,5 +202,266 @@
   color: #fff;
   font-size: 54px;
   font-family: "Sacramento", cursive;
+}
+
+@media (min-width: 640px) {
+  .header__hero h1 {
+    font-size: 81px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__hero h1 {
+    padding: 0 81px 29px 81px;
+  }
+}
+
+.header__hero p {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header__hero p:hover {
+  color: #c7d93b;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .header__hero p {
+    font-size: 72px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__hero {
+    height: 100vh;
+  }
+}
+
+.products__category {
+  width: 100%;
+}
+
+.products__category__title {
+  margin-top: 1rem !important;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products__category__title h1 {
+  text-align: center;
+  color: #1d1a19;
+  padding: 0 0 23px 0;
+  font-size: 36px;
+  border-bottom: 1px solid #49423b;
+  font-family: "Playfair Display SC", serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.products__category__title p {
+  text-align: center;
+  color: #1d1a19;
+  font-size: 21px;
+  font-family: "Alice", serif;
+}
+
+.products__category__title h1 {
+  margin-bottom: 11.9px;
+}
+
+.products__category__title p#prod {
+  line-height: 1.5;
+}
+
+.products__category__title #logo {
+  font-size: 11.7px;
+  color: #444;
+  letter-spacing: .5em;
+  font-family: "Playfair Display SC", serif;
+}
+
+@media (min-width: 768px) {
+  .products__category__title {
+    margin-top: 5rem !important;
+  }
+  .products__category__title h1 {
+    font-size: 72px;
+    padding: 0 72px 8px 72px;
+    margin-bottom: 1rem;
+  }
+}
+
+.products__category__items .product {
+  width: 85%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products__category__items .product img {
+  width: 100%;
+  margin-top: .5rem;
+}
+
+.products__category__items .product h1 {
+  text-align: center;
+  color: #1d1a19;
+  padding: 0 0 23px 0;
+  font-size: 36px;
+  border-bottom: 1px solid #c7c7c7;
+  font-family: "Playfair Display SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.products__category__items .product p {
+  text-align: center;
+  color: #1d1a19;
+  font-size: 36px;
+  font-family: "Sacramento", cursive;
+}
+
+.products__category__items .product h1 {
+  width: 100%;
+  margin-bottom: 14.85px;
+}
+
+.products__category__items .product h1 span {
+  font-size: 21.6px;
+}
+
+.products__category__items .product p {
+  margin-bottom: 3rem;
+}
+
+.products__category__items .product .pr__md {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .products__category__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .products__category__items .product {
+    width: 25%;
+    position: relative;
+  }
+  .products__category__items .product img {
+    width: 70%;
+  }
+  .products__category__items .product #pr {
+    display: none;
+  }
+  .products__category__items .product .pr__md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    height: 300px;
+    background-color: rgba(29, 26, 25, 0.5);
+    width: 300px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .products__category__items .product .pr__md h1 {
+    text-align: center;
+    color: #fff;
+    padding: 0 0 23px 0;
+    font-size: 36px;
+    border-bottom: 1px solid white;
+    font-family: "Playfair Display SC", serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 1;
+  }
+  .products__category__items .product .pr__md p {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    font-family: "Sacramento", cursive;
+  }
+  .products__category__items .product .pr__md h1 {
+    width: 80%;
+  }
+  .products__category__items .product .pr__md p {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .products__category__items .product .pr__md p:hover {
+    color: #c7d93b;
+  }
+  .products__category__items .product .pr__md:hover {
+    opacity: 1;
+  }
+  .products__category__items .product .pr__md:hover p {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media (min-width: 1024px) {
+  .products__category__items .product img {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

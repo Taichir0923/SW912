@@ -2,12 +2,15 @@ $mainBlack: #000;
 $mainWhite: #fff;
 $blackBorder: 1px solid #49423b;
 $whiteBorder: 1px solid white;
+$menuBorder: 1px solid rgba(255, 255, 255, 0.3);
+$lightBorder :1px solid #c7c7c7;
 $textColor: #1d1a19;
 $hoverGreen: #c7d93b;
 $hoverBG: rgba(29, 26, 25, 0.5);
 $descriptionBG: #f4efde;
 $footerBG: #dba539;
 $lastBG: #805f1e;
+$logoColor: #444;
 
 // fonts
 $playfair: 'Playfair Display SC', serif;
@@ -27,9 +30,9 @@ $largeTitleSize_md: 72px;
 $largeTitleSize_lg: 81px;
 $largeTextSize_lg: 72px;
 
-$largeTitle_p_lg: 0 81px 20px 81px;
+$largeTitle_p_lg: 0 81px 29px 81px;
 
-$title_p_sm: 0 0 30px 0;
+$title_p_sm: 0 0 23px 0;
 $title_m_sm: 0 0 15px 0;
 $textSize_sm: 21px;
 $italicSize_sm: 36px;
